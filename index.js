@@ -5,7 +5,6 @@ import veganCafeRoute from "./routes/vegancafe.js";
 import veganClothingRoute from "./routes/veganclothing.js";
 import veganCosmeticsRoute from "./routes/vegancosmetics.js";
 import veganRestarauntsRoute from "./routes/veganrestaraunts.js";
-import getAllVegan from "./routes/allvegan.js"
 import cors from "cors";
 
 const app = express();
@@ -26,7 +25,7 @@ app.use("/vegancafe", veganCafeRoute);
 app.use("/veganclothing", veganClothingRoute);
 app.use("/vegancosmetics", veganCosmeticsRoute);
 app.use("/veganrestaurant", veganRestarauntsRoute);
-app.use("/allvegan", getAllVegan);
+
 
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to the Find Vegan Backend! 🕊️ </h1>");
